@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Initial text:</h2>
+      <p>
+        <%= @encoded_message %>
+      </p>
+
+      <h2>Best guess:</h2>
+      <p>
+        <%= @best_guess %>
+      </p>
+
+      <h2>Possible solutions:</h2>
+      <ol>
+        <% @solutions.each do |solution| %>
+          <li> <%= solution %> </li>
+        <% end %>
+      </ol>
+    </div>
+  </div>
+</div>
